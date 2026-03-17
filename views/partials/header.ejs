@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Green Age</title>
-
-    <!-- CSS -->
-    <link href="/css/tooplate_style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/nivo-slider.css" />
-
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script src="/js/jquery.nivo.slider.js"></script>
-
-    <script>
-        function clearText(field) {
-            if (field.defaultValue == field.value) field.value = '';
-            else if (field.value == '') field.value = field.defaultValue;
-        }
-
-        $(window).on('load', function () {
-            $('#slider').nivoSlider({
-                effect: 'random',
-                slices: 10,
-                animSpeed: 500,
-                pauseTime: 2200,
-                startSlide: 0,
-                directionNav: false,
-                controlNav: false,
-                pauseOnHover: true
-            });
-        });
-    </script>
-</head>
-
-<body class="homepage">
-
 <div id="tooplate_wrapper">
+
+    <!-- HEADER -->
     <div id="tooplate_header">
         <div id="site_title">
             <h1><a href="/">Green Age</a></h1>
@@ -47,16 +12,16 @@
     <div id="tooplate_menu">
         <ul>
             <li><a href="/" class="current">Home</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/news">News</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li class="last"><a href="/contact">Contact</a></li>
+            <li><a href="/galleryv2">Gallery</a></li>
+            <li><a href="/newsv2">News</a></li>
+            <li><a href="/blogv2">Blog</a></li>
+            <li class="last"><a href="/contactv2">Contact</a></li>
         </ul>
 
         <div id="search_box">
             <form action="#" method="get">
                 <input type="text" value="Search" name="q" id="searchfield"
-                       onfocus="clearText(this)" onblur="clearText(this)" />
+                    onfocus="clearText(this)" onblur="clearText(this)" />
                 <input type="submit" value="" id="searchbutton" />
             </form>
         </div>
